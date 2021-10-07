@@ -1,0 +1,29 @@
+{
+  "name": "reactpractice",
+  "version": "1.0.0",
+  "description": "notion clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anatolik2509/ReactPractice.git"
+  },
+  "keywords": [
+    "js",
+    "react",
+    "redux",
+    "webpack"
+  ],
+  "author": "realsanya, anatolik2509",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anatolik2509/ReactPractice/issues"
+  },
+  "homepage": "https://github.com/anatolik2509/ReactPractice#readme",
+  "devDependencies": {
+    "webpack": "^5.58.0",
+    "webpack-cli": "^4.9.0"
+  }
+}
