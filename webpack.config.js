@@ -25,6 +25,10 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader'], // webpack идет справа налево, порядок важен 
+            },
+            {
+                test: /\.(png|jpg|svg|gif)$/,
+                use: ['file-loader'],
             }
         ],
     }   
