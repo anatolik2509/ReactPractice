@@ -24,11 +24,18 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ['style-loader', 'css-loader'], // webpack идет справа налево, порядок важен 
+                use: [
+                    {
+                        loader: 'style-loader'
+                    }, {
+                        loader: 'css-loader'
+                    }], // webpack идет справа налево, порядок важен 
             },
             {
                 test: /\.(png|jpg|svg|gif)$/,
-                use: ['file-loader'],
+                use: {
+                    loader: 'file-loader'
+                },
             }
         ],
     }   
