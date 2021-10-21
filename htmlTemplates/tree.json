@@ -1,0 +1,54 @@
+{
+  "Index": {
+    "App": {
+      "SideBar" : {
+        "Account" : {},
+        "SearchButton": {},
+        "Settings": {},
+        "PageList": ["Page"],
+
+        "Activity": {
+          "Comments": {},
+          "Updates": {}
+        },
+        "TemplatesButton": {},
+        "ImportButton": {},
+        "TrashButton": {}
+      },
+      "Page": {
+        "TopBar": {
+          "Title": {},
+          "Actions": ["FavoriteButton"]
+        },
+        "Editor": {
+          "Controls": ["Action"],
+          "Content": ["Blocks"]
+        }
+      },
+      "HelpMenu": ["Action"],
+      "Templates": {
+        "TemplateView": {}
+      },
+      "Import": {
+        "Title": {},
+        "List": ["ImportItem"]
+      },
+      "Settings": {
+        "SideBar": ["Action"],
+        "ActionView": {}
+      },
+      "Search": {
+        "SearchInput": {},
+        "Params" : {
+          "Sort": {},
+          "Filter": {}
+        },
+        "List": {
+          "PageList": ["Page"]
+        },
+        "Footer": {}
+      }
+    },
+    "ContextMenu": ["Action"]
+  }
+}
