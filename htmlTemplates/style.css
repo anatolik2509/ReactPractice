@@ -17,7 +17,7 @@ body{
 }
 
 .side-menu-elem{
-    margin: 10px 5px;
+    margin: 15px 10px;
 }
 
 .page-content{
@@ -41,22 +41,26 @@ body{
 
 .account-name{
     display: inline-block;
+    font-size: 22px;
 }
 
 .icon{
     width: 15px;
     height: 15px;
-    margin-right: 5px;
 }
 
 .icon-sm{
     width: 10px;
     height: 10px;
-    margin-right: 5px;
+}
+
+.icon-lg{
+    width: 20px;
+    height: 20px;
 }
 
 .page-list{
-    list-style-type: none;
+    list-style: none;
     padding-left: 20px;
     margin-bottom: 20px;
 }
@@ -67,4 +71,42 @@ body{
 
 .pages-title{
     font-size: 22px;
+}
+
+.top-bar{
+    background-color: darkgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.current-page-title{
+    padding: 10px;
+}
+
+.favorite-button{
+    margin: 10px;
+}
+
+.template-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.help-button{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    background-color: darkgray;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
