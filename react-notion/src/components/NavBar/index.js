@@ -10,7 +10,7 @@ const NavBar = () => {
                 My tasks
             </div>
             <div class="favorite-button">
-                <img class="icon-lg" src="icons/favorite.png" alt="" />
+                <img class="icon-lg" src="assets/icons/favorite.png" alt="" />
             </div>
         </div>
     )
