@@ -1,9 +1,18 @@
 import React from 'react';
 
+import '../../App.css';
+
 const NavBar = () => {
 
     return (
-        <h1>Это NavBar</h1>
+        <div class="top-bar">
+            <div class="current-page-title">
+                My tasks
+            </div>
+            <div class="favorite-button">
+                <img class="icon-lg" src="icons/favorite.png" alt="" />
+            </div>
+        </div>
     )
 };
 

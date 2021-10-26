@@ -36,3 +36,111 @@
     transform: rotate(360deg);
   }
 }
+
+
+.main-page{
+  width: 100%;
+}
+
+.side-menu{
+  height: 100vh;
+  width: 230px;
+  position: fixed;
+  background-color: gray;
+  padding: 10px;
+}
+
+.side-menu-elem{
+  margin: 15px 10px;
+}
+
+.page-content{
+  margin-left: 250px;
+  height: 200vh;
+}
+
+.account-preview{
+  display: block;
+}
+
+.avatar{
+  display: inline-block;
+  border-radius: 10%;
+  width: 20px;
+  height: 20px;
+  background: darkgray;
+  text-align: center;
+  color: white;
+}
+
+.account-name{
+  display: inline-block;
+  font-size: 22px;
+}
+
+.icon{
+  width: 15px;
+  height: 15px;
+}
+
+.icon-sm{
+  width: 10px;
+  height: 10px;
+}
+
+.icon-lg{
+  width: 20px;
+  height: 20px;
+}
+
+.page-list{
+  list-style: none;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.page-list-elem{
+  margin: 10px;
+}
+
+.pages-title{
+  font-size: 22px;
+}
+
+.top-bar{
+  background-color: darkgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.current-page-title{
+  padding: 10px;
+}
+
+.favorite-button{
+  margin: 10px;
+}
+
+.template-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+
+.help-button{
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: darkgray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
