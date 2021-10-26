@@ -5,9 +5,9 @@ import NavBar from '../NavBar';
 
 const Template = () => {
     return (
-        <div class="page-content">
+        <div className="page-content">
             <NavBar />
-            <div class="template-container">
+            <div className="template-container">
                 There is templates
             </div>
     </div>

@@ -27,7 +27,9 @@
       },
       "HelpMenu": ["Action"],
       "Templates": {
-        "TemplateView": {}
+        "TemplateView": {},
+        "Table": {},
+        "CheckList": {}
       },
       "Import": {
         "Title": {},
