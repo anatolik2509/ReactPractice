@@ -5,7 +5,7 @@ import Template from './components/Template';
 
 function App() {
   return (
-    <div class="main-page">
+    <div className="main-page">
       <SideBar />
       <Template />
     </div>

@@ -6,11 +6,11 @@ import NavBar from '../NavBar';
 const Template = () => {
     return (
         <div className="page-content">
-            <NavBar />
+            <NavBar/>
             <div className="template-container">
                 There is templates
             </div>
-    </div>
+        </div>
     )
 }
 

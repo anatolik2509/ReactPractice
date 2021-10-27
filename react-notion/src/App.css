@@ -60,17 +60,27 @@
 }
 
 .account-preview{
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .avatar{
-  display: inline-block;
   border-radius: 10%;
   width: 20px;
   height: 20px;
   background: darkgray;
   text-align: center;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.account-preview > div{
+  margin-right: 10px;
 }
 
 .account-name{
