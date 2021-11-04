@@ -11,11 +11,11 @@ import TemplatesButton from "../TemplatesButton";
 const SideBar = () => {
     return (
         <nav className="side-menu">
-            <AvatarPreview/>
-            <SearchButton/>
-            <SettingsButton/>
+            <AvatarPreview />
+            <SearchButton />
+            <SettingsButton />
             <PageList pages={[{name: 'My Tasks'}, {name: 'My Books'}, {name: 'My Events'}, {name: 'My Calendar'},]}/>
-            <TemplatesButton/>
+            <TemplatesButton />
 
 
             <div className="import-button side-menu-elem">

@@ -111,6 +111,8 @@
   list-style: none;
   padding-left: 20px;
   margin-bottom: 20px;
+  overflow: hidden;
+  transition: height 1s linear;
 }
 
 .page-list-elem{
@@ -158,3 +160,26 @@
   justify-content: center;
   align-items: center;
 }
+
+.add-form{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.add-form-field {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+.triangle{
+}
+
+.closed-triangle {
+ transform: rotate(-90deg);
+}
+
+.closed-list {
+  height: 0;
+}
+
