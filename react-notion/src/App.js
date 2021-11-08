@@ -1,13 +1,13 @@
 import './App.css';
 
 import SideBar from './components/SideBar';
-import Template from './components/Template';
+import Page from './components/Page';
 
 function App() {
   return (
     <div className="main-page">
       <SideBar />
-      <Template />
+      <Page />
     </div>
   );
 }

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 
+import Modal from '../Modal';
+import Button from '../Button';
 import '../../App.css';
 import AvatarPreview from "../AvatarPreview";
 import SearchButton from "../SearchButton";
@@ -9,13 +11,39 @@ import TemplatesButton from "../TemplatesButton";
 
 
 const SideBar = () => {
+
+    const [visible, setVisible] = useState(false);
+
+    const onClose = () => {
+        setVisible(false);
+    }
+
+    const onTemplateButtonClick = () => {
+        setVisible(true);
+    };
+
+    const renderTemplatesModal = () => {
+        console.log(visible);
+        if (!visible) return null;
+        return (
+            <Modal onClose={onClose}>
+                <h1>Modal</h1>
+            </Modal>
+        )
+    };
+
     return (
         <nav className="side-menu">
             <AvatarPreview />
             <SearchButton />
             <SettingsButton />
             <PageList pages={[{name: 'My Tasks'}, {name: 'My Books'}, {name: 'My Events'}, {name: 'My Calendar'},]}/>
-            <TemplatesButton />
+            <Button 
+                text='Templates'
+                img='assets/icons/template.png'
+                cN='cN'
+                onClick={onTemplateButtonClick} 
+            />
 
 
             <div className="import-button side-menu-elem">
@@ -26,6 +54,7 @@ const SideBar = () => {
                 <img className="icon menu-icon" src="assets/icons/delete.png" alt=""/>
                 Trash
             </div>
+            {renderTemplatesModal()}
         </nav>
     )
 };

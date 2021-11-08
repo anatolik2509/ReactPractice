@@ -3,15 +3,16 @@ import React from 'react';
 import '../../App.css';
 import NavBar from '../NavBar';
 
-const Template = () => {
+const Page = () => {
+
     return (
         <div className="page-content">
             <NavBar/>
-            <div className="template-container">
-                There is templates
+            <div className="page-container">
+                There is page
             </div>
         </div>
     )
 }
 
-export default Template;
+export default Page;
