@@ -8,6 +8,7 @@ import SearchButton from "../SearchButton";
 import SettingsButton from "../SettingsButton";
 import PageList from "../PageList";
 import TemplatesButton from "../TemplatesButton";
+import TemplatesModal from '../Modal/TemplatesModal';
 
 
 const SideBar = () => {
@@ -23,11 +24,10 @@ const SideBar = () => {
     };
 
     const renderTemplatesModal = () => {
-        console.log(visible);
         if (!visible) return null;
         return (
             <Modal onClose={onClose}>
-                <h1>Modal</h1>
+                <TemplatesModal />
             </Modal>
         )
     };
@@ -44,7 +44,6 @@ const SideBar = () => {
                 cN='cN'
                 onClick={onTemplateButtonClick} 
             />
-
 
             <div className="import-button side-menu-elem">
                 <img className="icon menu-icon" src="assets/icons/import.png" alt=""/>
