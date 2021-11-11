@@ -2,6 +2,7 @@ import React from 'react';
 
 import '../../App.css';
 import NavBar from '../NavBar';
+import DropDownMenu from '../DropDownMenu';
 
 const Page = () => {
 
@@ -9,7 +10,9 @@ const Page = () => {
         <div className="page-content">
             <NavBar/>
             <div className="page-container">
-                There is page
+                <DropDownMenu>
+                    + Добавить блок
+                </DropDownMenu>
             </div>
         </div>
     )
