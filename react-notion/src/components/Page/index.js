@@ -11,7 +11,7 @@ const Page = () => {
             <NavBar/>
             <div className="page-container">
                 <DropDownMenu>
-                    + Добавить блок
+                    Добавить блок
                 </DropDownMenu>
             </div>
         </div>
