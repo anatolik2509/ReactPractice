@@ -37,7 +37,7 @@ const SideBar = () => {
             <AvatarPreview />
             <SearchButton />
             <SettingsButton />
-            <PageList pages={[{name: 'My Tasks'}, {name: 'My Books'}, {name: 'My Events'}, {name: 'My Calendar'},]}/>
+            <PageList/>
             <Button 
                 text='Templates'
                 img='assets/icons/template.png'
