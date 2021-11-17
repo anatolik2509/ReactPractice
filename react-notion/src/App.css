@@ -234,6 +234,7 @@
 .visible {
   color: #19171199;
   font-weight: 700;
+  z-index: 1;
 }
 
 .add-block:hover{
@@ -261,4 +262,44 @@
   font-weight: 700;
   color: #19171199;
   cursor: pointer;
+}
+
+.wrapper-class {
+  width: calc(100% - 160px);
+  padding: 1rem;
+  border: 1px solid #ccc;
+  margin: 20px 80px;
+}
+
+.editor-class {
+  padding: 1rem;
+}
+
+.toolbar-class {
+  border: 1px solid #ccc;
+}
+
+.toolbar-class .rdw-link-wrapper {
+  display: none;
+}
+
+.toolbar-class .rdw-embedded-wrapper {
+  display: none;
+}
+
+.toolbar-class .rdw-image-wrapper {
+  display: none;
+}
+
+.toolbar-class .rdw-remove-wrapper {
+  display: none;
+}
+
+.toolbar-class .rdw-history-dropdown {
+  display: none;
+}
+
+.preview {
+  padding: 1rem;
+  margin-top: 1rem;
 }

@@ -3,6 +3,7 @@ import React from 'react';
 import '../../App.css';
 import NavBar from '../NavBar';
 import DropDownMenu from '../DropDownMenu';
+import TextFrame from '../TextFrame';
 
 const Page = () => {
 
@@ -13,6 +14,7 @@ const Page = () => {
                 <DropDownMenu>
                     Добавить блок
                 </DropDownMenu>
+                <TextFrame />
             </div>
         </div>
     )
