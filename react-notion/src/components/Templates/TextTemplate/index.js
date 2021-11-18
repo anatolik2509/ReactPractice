@@ -6,7 +6,12 @@ import { convertToHTML } from 'draft-convert';
 import DOMPurify from 'dompurify';
 import '../../../App.css';
 
-const TextTemplate = () => {
+const TextTemplate = (props) => {
+
+    const {
+        editMode,
+        hide
+    } = props;
 
     const [editorState, setEditorState] = useState(() => EditorState.createEmpty());
 
@@ -28,26 +33,37 @@ const TextTemplate = () => {
         setConvertedContent(currentContentAsHTML);
     };
 
+    const onSave = () => {
+        console.log('TODO Save');
+        hide();
+    }
+
     return (
         <>
-            <Editor 
-                editorState={editorState}
-                onEditorStateChange={handleEditorChange}
-                wrapperClassName="wrapper-class"
-                editorClassName="editor-class"
-                toolbarClassName="toolbar-class"
-                toolbar={{
-                    inline: { 
-                        inDropdown: true,
-                        options: ['bold', 'italic', 'underline', 'strikethrough'],
-                    },
-                    list: { inDropdown: true },
-                    textAlign: { inDropdown: true },
-                    link: { inDropdown: true },
-                    history: { inDropdown: true },
-                }}
-            />
+        {editMode ? (
+            <>
+                <Editor 
+                    editorState={editorState}
+                    onEditorStateChange={handleEditorChange}
+                    wrapperClassName="wrapper-class"
+                    editorClassName="editor-class"
+                    toolbarClassName="toolbar-class"
+                    toolbar={{
+                        inline: { 
+                            inDropdown: true,
+                            options: ['bold', 'italic', 'underline', 'strikethrough'],
+                        },
+                        list: { inDropdown: true },
+                        textAlign: { inDropdown: true },
+                        link: { inDropdown: true },
+                        history: { inDropdown: true },
+                    }}
+                />
+                <button className="block-button" onClick={onSave}>Сохранить</button>
+            </>
+        ) : (
             <div className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
+        )}
         </>
     )
 };

@@ -168,6 +168,12 @@ a.nostyle:visited {
   justify-content: flex-start;
   align-content: center;
   align-items: center;
+  padding: 0 40px;
+}
+
+.page-blocks {
+  width: 100%;
+  justify-content: flex-start;
 }
 
 .help-button{
@@ -249,6 +255,8 @@ a.nostyle:visited {
 
 .add-block:hover{
   cursor: pointer;
+  color: #19171199;
+  font-weight: 700;
 }
 
 .block-list {
@@ -274,11 +282,16 @@ a.nostyle:visited {
   cursor: pointer;
 }
 
+/* ======================================
+Template styles
+====================================== */
+
 .wrapper-class {
   width: calc(100% - 160px);
   padding: 1rem;
   border: 1px solid #ccc;
-  margin: 20px 80px;
+  border-radius: 10px;
+  margin: 10px 0;
 }
 
 .editor-class {
@@ -287,6 +300,18 @@ a.nostyle:visited {
 
 .toolbar-class {
   border: 1px solid #ccc;
+}
+
+.wrapper-class .rdw-editor-toolbar {
+  border-radius: 10px;
+}
+
+.wrapper-class .rdw-dropdown-wrapper {
+  border: none;
+}
+
+.wrapper-class .rdw-option-wrapper {
+  border: none;
 }
 
 .toolbar-class .rdw-link-wrapper {
@@ -316,6 +341,20 @@ a.nostyle:visited {
 
 .current-page-element{
   font-weight: bold;
+}
+
+.block-button {
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  color: #19171199;
+  border-radius: 10px;
+  border: 1px solid #19171199;
+}
+
+.block-button:hover {
+  font-weight: 700;
+  cursor: pointer;
 }
 
 
