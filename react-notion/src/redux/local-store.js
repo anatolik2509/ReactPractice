@@ -1,7 +1,7 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 
 const initialState = {
-    pageList: [{ id: 0, name: 'fuck you', blocks: [{ id: 0, type: 'text', data: {}}, { id: 1, type: 'image', data: {}}] }]
+    pageList: [{ id: 0, name: 'my awesome page', blocks: [{ id: 0, type: 'text', data: {}}, { id: 1, type: 'image', data: {}}] }]
 }
 
 export const pagesSlice = createSlice({

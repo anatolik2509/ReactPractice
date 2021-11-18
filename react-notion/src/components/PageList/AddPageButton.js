@@ -25,7 +25,7 @@ const AddPageButton = ({onAdd}) => {
         <div onClick={(e) => {
             setIsFocused(true);
         }}>
-            <img className="icon menu-icon" src="assets/icons/plus.png" alt=""/>
+            <img className="icon menu-icon" src="/assets/icons/plus.png" alt=""/>
             <span>Add page</span>
         </div>
     );

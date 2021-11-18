@@ -67,7 +67,7 @@ class PageList extends React.Component {
             <div>
                 <div className="pages-title side-menu-elem" onClick={this.changeOpened}>
                     <img ref={this.pageListTriangleRef} className="icon-sm menu-icon"
-                         src="assets/icons/opened_triangle.png" alt=""/>
+                         src="/assets/icons/opened_triangle.png" alt=""/>
                     <b>Pages</b>
                 </div>
                 <ul ref={this.pageListRef} className="page-list side-menu-elem">

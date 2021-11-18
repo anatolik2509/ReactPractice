@@ -40,17 +40,17 @@ const SideBar = () => {
             <PageList/>
             <Button 
                 text='Templates'
-                img='assets/icons/template.png'
+                img='/assets/icons/template.png'
                 cN='cN'
                 onClick={onTemplateButtonClick} 
             />
 
             <div className="import-button side-menu-elem">
-                <img className="icon menu-icon" src="assets/icons/import.png" alt=""/>
+                <img className="icon menu-icon" src="/assets/icons/import.png" alt=""/>
                 Import
             </div>
             <div className="side-menu-elem">
-                <img className="icon menu-icon" src="assets/icons/delete.png" alt=""/>
+                <img className="icon menu-icon" src="/assets/icons/delete.png" alt=""/>
                 Trash
             </div>
             {renderTemplatesModal()}
