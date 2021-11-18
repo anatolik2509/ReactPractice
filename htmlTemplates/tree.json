@@ -52,5 +52,25 @@
       }
     },
     "ContextMenu": ["Action"]
+  },
+  "Constructor": {
+    "AddText": {
+      "text": "value"
+    },
+    "AddTable": {
+      "columns": {
+        "title": {},
+        "dataType": ["text", "date", "url", "checkbox"]
+      }
+    },
+    "AddFrame": {
+      "IFrameElement": {}
+    },
+    "AddPageLink": {
+      "link": "value"
+    },
+    "AddImage": {
+      "src": "link"
+    }
   }
 }
