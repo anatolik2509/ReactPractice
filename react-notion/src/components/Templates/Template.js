@@ -1,6 +1,9 @@
 import React from 'react';
-import TableTemplate from './TableTemplate';
+
+import ImageTemplate from './ImageTemplate';
+import LinkTemplate from './LinkTemplate';
 import TextTemplate from './TextTemplate';
+import VideoTemplate from './VideoTemplate';
 
 
 const Template = (props) => {
@@ -13,8 +16,6 @@ const Template = (props) => {
 
     const { id, type } = data;
 
-    console.log(data);
-
     const renderTextTemplate = () => {
         if (type !== 'text') return null;
         return (
@@ -25,10 +26,30 @@ const Template = (props) => {
         );
     };
 
-    const renderTableTemplate = () => {
-        if (type !== 'table') return null;
+    const renderImageTemplate = () => {
+        if (type !== 'image') return null;
         return (
-            <TableTemplate 
+            <ImageTemplate 
+                editMode={editMode} 
+                hide={hide}
+            />
+        )
+    };
+
+    const renderVideoTemplate = () => {
+        if (type !== 'video') return null;
+        return (
+            <VideoTemplate 
+                editMode={editMode} 
+                hide={hide}
+            />
+        )
+    };
+
+    const renderLinkTemplate = () => {
+        if (type !== 'link') return null;
+        return (
+            <LinkTemplate 
                 editMode={editMode} 
                 hide={hide}
             />
@@ -38,7 +59,9 @@ const Template = (props) => {
     return (
         <>
             {renderTextTemplate()}
-            {renderTableTemplate()}
+            {renderImageTemplate()}
+            {renderVideoTemplate()}
+            {renderLinkTemplate()}
         </>
     )
 };

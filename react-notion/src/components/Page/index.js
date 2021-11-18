@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 
-import '../../App.css';
+import { Switch, Route, Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { getPages } from "../../redux/local-store";
+
 import NavBar from '../NavBar';
 import DropDownMenu from '../DropDownMenu';
 import Template from "../Templates/Template";
-import {Switch, Route, Redirect} from "react-router-dom";
-import TableTemplate from "../Templates/TableTemplate";
-import {useSelector} from "react-redux";
-import {getPages} from "../../redux/local-store";
+import '../../App.css';
 
 
 const Page = () => {
@@ -31,11 +31,13 @@ const Page = () => {
                     <Route key={i} path={'/pages/' + page.id}>
                         <NavBar title={page.name}/>
                         <div className="page-container">
-                            <DropDownMenu>
+                            <DropDownMenu
+                                id={page.id}
+                            >
                                 Добавить блок
                             </DropDownMenu>
                             <div className="page-blocks">
-                                {page.blocks.map((block) => (
+                                {page.blocks && page.blocks.map((block) => (
                                     <>
                                         <Template 
                                             data={block} 

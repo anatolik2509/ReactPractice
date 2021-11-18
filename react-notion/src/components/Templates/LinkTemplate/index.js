@@ -1,6 +1,6 @@
 import React from "react";
 
-const TableTemplate = (props) => {
+const LinkTemplate = (props) => {
 
     const {
         editMode,
@@ -8,7 +8,7 @@ const TableTemplate = (props) => {
     } = props;
 
     const onSave = () => {
-        console.log('TODO Save table');
+        console.log('TODO LinkTemplate');
         hide();
     }
 
@@ -16,14 +16,14 @@ const TableTemplate = (props) => {
         <>
             {editMode ? (
                 <>
-                    <h1>TODO Table Template</h1>
+                    <h1>TODO Link Template</h1>
                     <button className="block-button" onClick={onSave}> Сохранить </button>
                 </>
             ) : (
-                <h1>This is Table template</h1>
+                <h1>This is Link Template</h1>
             )}
         </>
     );
 };
 
-export default TableTemplate;
+export default LinkTemplate;
