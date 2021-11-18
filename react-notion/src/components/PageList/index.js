@@ -1,29 +1,25 @@
 import React from "react";
 import PageListElement from "./PageListElement";
 import AddPageButton from "./AddPageButton";
+import {useSelector, useDispatch} from "react-redux";
+import {getPages, addPage} from "../../redux/local-store";
+import { connect } from 'react-redux';
 
-export default class PageList extends React.Component {
+
+class PageList extends React.Component {
 
     constructor(props) {
         super(props);
 
         this.state = {
-            pages: props.pages,
             opened: true
         }
-
         this.pageListTriangleRef = React.createRef();
         this.pageListRef = React.createRef();
     }
 
     addPage = (pageName) => {
-        this.setState((state) => {
-            state.pages.push({name: pageName});
-            return {
-                pages: state.pages,
-                opened: state.opened
-            };
-        });
+        this.props.addPage(pageName);
     };
 
     changeOpened = () => {
@@ -47,7 +43,7 @@ export default class PageList extends React.Component {
             easing: 'ease'}).finished.then(() => {
                 this.pageListTriangleRef.current.classList.add('closed-triangle')
         });
-        this.pageListRef.current.animate([{height: '0'}],
+        this.pageListRef.current.animate([{height: this.pageListRef.current.clientHeight + 'px'}, {height: '0'}],
             {duration: 1000,
                 easing: 'ease'}).finished.then(() => {
             this.pageListRef.current.classList.add('closed-list')
@@ -76,10 +72,23 @@ export default class PageList extends React.Component {
                     <b>Pages</b>
                 </div>
                 <ul ref={this.pageListRef} className="page-list side-menu-elem">
-                    {this.state.pages.map((page, i) => <PageListElement key={i} name={page.name}/>)}
-                    <AddPageButton onAdd={this.addPage}/>
+                    {this.props.pages.map((page, i) => <PageListElement key={i} name={page.name} id={page.id}/>)}
+                    <li className="page-list-elem">
+                        <AddPageButton onAdd={this.addPage}/>
+                    </li>
                 </ul>
             </div>
         )
     }
 }
+
+function mapStateToProps(state) {
+    return { pages: state.pages.pageList };
+}
+
+const mapDispatchToProps = {
+    addPage
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(PageList);
+

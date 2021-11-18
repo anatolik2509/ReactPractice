@@ -38,10 +38,8 @@ const AddPageButton = ({onAdd}) => {
     );
 
     return (
-        <li className="page-list-elem">
-            {isFocused ? InputField : Button}
-        </li>
-    )
+        isFocused ? InputField : Button
+    );
 };
 
 export default AddPageButton;
