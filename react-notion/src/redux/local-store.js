@@ -15,7 +15,7 @@ export const pagesSlice = createSlice({
     }
 });
 
-export const {addPage} = pagesSlice.actions;
+export const { addPage } = pagesSlice.actions;
 
 export const getPages = (state) => {
     return state.pages.pageList;
