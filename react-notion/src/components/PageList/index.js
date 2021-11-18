@@ -1,8 +1,7 @@
 import React from "react";
 import PageListElement from "./PageListElement";
 import AddPageButton from "./AddPageButton";
-import {useSelector, useDispatch} from "react-redux";
-import {getPages, addPage} from "../../redux/local-store";
+import { addPage } from "../../redux/local-store";
 import { connect } from 'react-redux';
 
 
@@ -87,7 +86,7 @@ function mapStateToProps(state) {
 }
 
 const mapDispatchToProps = {
-    addPage
+    addPage,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(PageList);
