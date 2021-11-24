@@ -8,9 +8,9 @@ const AddPageButton = ({onAdd}) => {
     const addPageOnSubmit = (e) => {
         e.preventDefault();
         console.log('hello');
-        onAdd(e.target[0].value); //лучше вызвать в конце
         e.target[0].value = '';
         setIsFocused(false);
+        onAdd(e.target[0].value); //лучше вызвать в конце
     };
 
     const onFormBlur = (e) => {
