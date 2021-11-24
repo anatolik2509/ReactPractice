@@ -14,7 +14,7 @@ const NavBar = (props) => {
                 {title}
             </div>
             <div className="favorite-button">
-                <img className="icon-lg" src="assets/icons/favorite.png" alt="" />
+                <img className="icon-lg" src="/assets/icons/favorite.png" alt="" />
             </div>
         </div>
     )

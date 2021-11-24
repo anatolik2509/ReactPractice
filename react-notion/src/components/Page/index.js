@@ -53,7 +53,6 @@ const Page = () => {
                         </div>
                     </Route>
                 ))}
-
                 <Redirect to='/'/>
             </Switch>
         </div>

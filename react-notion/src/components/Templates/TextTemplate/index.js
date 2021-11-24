@@ -62,7 +62,7 @@ const TextTemplate = (props) => {
                 <button className="block-button" onClick={onSave}>Сохранить</button>
             </>
         ) : (
-            <div className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}></div>
+            <div className="preview" dangerouslySetInnerHTML={createMarkup(convertedContent)}/>
         )}
         </>
     )
