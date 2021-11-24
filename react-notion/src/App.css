@@ -357,4 +357,24 @@ Template styles
   cursor: pointer;
 }
 
+.empty-drop-area,
+.drop-area {
+  display: flex;
+  width: 80vh;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  color: #19171199;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.empty-drop-area {
+  border: 3px solid transparent;
+}
+
+.drop-area {
+  border: 3px dashed #19171199;
+}
+
 
