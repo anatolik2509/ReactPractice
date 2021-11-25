@@ -23,7 +23,8 @@ const Page = () => {
     const hideEditMode = () => {
         setEditBlock(-1);
     }
-
+    //новый блок добавляется вверх, а не вниз
+    //TODO вытащить роутинг отсюда 
     return (
         <div className="page-content">
             <Switch>

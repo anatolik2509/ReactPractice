@@ -343,6 +343,19 @@ Template styles
   font-weight: bold;
 }
 
+.block-input { 
+  margin: 20px 0;
+}
+
+.block-input input {
+  width: 300px;
+  font-size: 20px;
+  color: #19171199;
+  border-radius: 10px;
+  border: 1px solid #19171199;
+  padding: 10px;
+}
+
 .block-button {
   width: 150px;
   height: 40px;
@@ -375,6 +388,10 @@ Template styles
 
 .drop-area {
   border: 3px dashed #19171199;
+}
+
+.video-template {
+  margin: 20px 0;
 }
 
 
